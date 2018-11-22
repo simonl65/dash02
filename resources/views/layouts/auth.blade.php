@@ -13,24 +13,19 @@
     <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
-<body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
-    <div id="app">
-        @include('layouts.header')
-        <div class="app-body">
-            @include('layouts.sidebar')
-            <main class="main">
-                <div class="container-fluid">
-                    <div class="animated fadeIn">
-                        @yield('content')
-                    </div>
-                </div>
-            </main>
+<body>
+    <div id="app" class="app flex-row align-items-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                @yield('auth')
+            </div>
         </div>
     </div>
-</body></html>
+</body>
+</html>
