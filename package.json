@@ -23,7 +23,7 @@
     },
     "dependencies": {
         "@coreui/coreui": "^2.1.1",
-        "@fortawesome/fontawesome-free": "^5.5.0",
+        "@fortawesome/fontawesome-free": "^5.15.1",
         "perfect-scrollbar": "^1.4.0",
         "simple-line-icons": "^2.4.1"
     }
